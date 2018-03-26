@@ -16,6 +16,7 @@ object cuentaDeJulian {
 		saldo += (monto*0.8)	} 
 
 	method extraer(monto) {
-		saldo-=monto
+		if(saldo- monto>= 5)
+		saldo -=(monto +5) else saldo -= monto
 	}
 }
